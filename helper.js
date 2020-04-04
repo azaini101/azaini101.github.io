@@ -1,4 +1,4 @@
-function resizeToMax(id){ //this was from an outside source (stackoverflow)
+function resizeToMax(id){
     myImage = new Image() 
     var img = document.getElementById(id);
     myImage.src = img.src; 
@@ -9,7 +9,7 @@ function resizeToMax(id){ //this was from an outside source (stackoverflow)
     }
 }
 
-function sortList() { //this code was taken from the writingschool and was used as inspiration for how I would create the "Most Recent" button.
+function sortListAZ() { 
     var list, i, switching, b, shouldSwitch;
     list = document.getElementById("myUL");
     switching = true;
@@ -30,7 +30,41 @@ function sortList() { //this code was taken from the writingschool and was used 
     }
 }
 
+function sortListZA() { 
+    var list, i, switching, b, shouldSwitch;
+    list = document.getElementById("myUL");
+    switching = true;
+    while (switching) {
+      switching = false;
+      b = list.getElementsByTagName("li");
+      for (i = 0; i < (b.length - 1); i++) {
+        shouldSwitch = false;
+        if (b[i].innerHTML.toLowerCase() < b[i + 1].innerHTML.toLowerCase()) {
+          shouldSwitch = true;
+          break;
+        }
+      }
+      if (shouldSwitch) {
+        b[i].parentNode.insertBefore(b[i + 1], b[i]);
+        switching = true;
+      }
+    }
+}
+
+function toggleButtonText() {
+    var button = document.getElementById('alphasort');
+    if(button.innerText == "A-Z"){
+        button.innerText = "Z-A";
+        sortListAZ()
+    }
+    else{
+        button.innerText = "A-Z";
+        sortListZA()
+    }
+}
+
 function sortByDate(){
+    sortListAZ()
     var list, i, b, y1, m1, d1;
     list = document.getElementById("myUL");
     switching = true;
