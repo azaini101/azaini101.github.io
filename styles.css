@@ -12,12 +12,16 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 h2 {
-  padding-top: 60px;
+  padding-top: 20px;
 /*   This fixes the scroll error but looks a bit weird */
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   text-align: center;
   font-family: 'Oswald', sans-serif;
   font-size: 2.7em;
+}
+
+.gif {
+    position: relative;
 }
 
 
@@ -66,6 +70,8 @@ h2 {
 .navbar-default.change-color {
   background-color: rgb(57, 55, 55);
 }
+
+
 
 
 /*  --HEADER STYLING-- */
@@ -192,9 +198,7 @@ hr {
 
 
 /* --BEGIN WORK SECTION STYLING-- */
-#work-section h2 {
-  padding-bottom: 2em;
-}
+
 .work-info h4 {
   margin-bottom: 15px;
   font-family: 'Oswald', sans-serif;
