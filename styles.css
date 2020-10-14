@@ -396,6 +396,9 @@ hr {
 .github-social {
   color: #272628;
 }
+.adobe-social {
+  color: #dd4b39;
+}
 .codepen-social {
   color: #272628;
 }
@@ -421,6 +424,10 @@ hr {
 .contact-buttons > a.github-social:hover, .contact-buttons > a.github-social:focus {
   color: white;
   background-color: #272628;
+}
+.contact-buttons > a.adobe-social:hover, .contact-buttons > a.adobe-social:focus {
+  color: white;
+  background-color: #dd4b39;
 }
 .contact-buttons > a.codepen-social:hover, .contact-buttons > a.codepen-social:focus {
   color: white;
