@@ -1,42 +1,62 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap"
-        rel="stylesheet"> 
-        <link href='blog.css' rel="stylesheet" type = "text/css">
-    </head>
-    <body>
-        <nav id='navbar'>
-            <ul class='bg-dark'>
-                <li class='nav-item'> <a href='index.html'> Home </a> </li>
-            </ul>
-        </nav>
-        <h1 class="title">Learning JavaScript</h1>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href='loading.css' rel="stylesheet" type="text/css">
+<link href='blog.css' rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+<nav class="navbar navbar-light bg-dark">
+    <a class="navbar-brand" style="color: white;" href="index.html">Home</a>
+</nav>
 
-        <small class="subtitle">Starting with no experience in JavaScript, I tried implementing some JavaScript into this site with the information I've learned this past week.</small>
+<article class="article">
+    <header class="header">
+        <h1>
+            Creating IsmahDesigns.com: The Idea Behind it
+        </h1>
+        <div class="meta">
+            <span class="author">by <span class="author-name">Ali Zaini</span></span>
+            <span class="pub-date">April 3, 2020</span>
+        </div>
+    </header>
 
-        <hr>
-        <img class ='center border' src="images/js.png">
-        <hr>
-        <h3 id = 'overview'>The Beginning</h3>
-        <p>
-            Now, although I did start from nothing in JavaScript, I have plenty of experience in Java. After getting around the slight learning curve with JS's syntax, I got the hang of it. However, I did not truly understand the powers of the language until I began practicing in "about:blank". This allowed for me to see my code run line-by-line and actually understand what's going on much better. 
-        </p>
-        <hr>
-        <h3 id = 'overview'>My Implementation</h3>
-        <p>When I thought of what to create, I instantly thought of implementing a "Contact Me" section that sends an email to me. I had anticipated it using some sort of JS, but it actually didn't require any at all. I simply used forsmpree.io to set it up. So, my next idea was to improve my blog section. Because it will be what I update the most out of everything, I want it to be as user-friendly as possible. As per the recommendation of my professor, I decided upon creating some button filters. Creating them were definitely not as difficult as I had expected. First, I needed to find a way to have all the blogs put into a list. After that, I implemented some CSS to make it look a bit nicer asthetically. Next, I needed to be sure the "Read More" buttons would stay with the respected blog post. After that, I started by having my JS function take in the list and save it as an array. Next, I took the substring of each element in the list so that I could extract the date. Once I got the date, I did the same with the next element. Finally, I simply compared the two dates and switched if the next element had an earlier date.</p>
-        <hr>
-        <h3 id = 'overview'>Reflecting on My Work</h3>
-        <p>
-            Overall, the implementations have a lot of room for improvement. One thing I would like to implement is the opposite of those buttons once they are pressed. So, for example, "A-Z" would turn into "Z-A" after being pressed, and the same idea for "Most Recent". I hope to have these updates down within the next week if all goes as planned.
-        </p>
-        <hr>
-        <img class='thumbnail' src='images/profile.png'>
-        <h2>About Me: Ali Zaini</h2>
-        <p>I am currently a junior at the University of New Orleans majoring in computer science.
-            Additionally, I'm looking to build on my schooling and previous work experience by continuing to work in a team-oriented environment and be challenged daily. </p>
-    </body>
-</html>
+    <h2 id='overview'>The Idea</h2>
+    <p>
+        When my web applications course professor assigned to me a final project that had to include frontend, backend,
+        and database operations, I immediately thought of my friend's small clothing brand. The creator of the brand had
+        developed this brand last year, and it did relatively well in sales while also gaining a decent social media
+        following. However, when catching up with him last month, he had told me that he had taken the site down due to
+        the cost of keeping it running. It turns out that the site was being run via Shopify, and it was costing him a
+        hefty price monthly. So, when this assignment was announced, I knew that I wanted to demonstrate my talents
+        online while also helping out a good friend. And to do this, I thought of noone better but Kauther Zeini to help
+        me fully implement this website and bring it back to life.
+    </p>
+
+    <h2 id='overview'>Our Basic Outline</h2>
+    <p>
+        Since both Kauther and I do a decent amount of online shopping, we know what this website is going to need.
+        Essentially, we want to create a landing site, a filtered section site (Men's long sleeve shirts, for example),
+        a shopping bag display page, and a checkout page. On the backend, we know that we are going to need to
+        potentially keep track of new inventory, the storage in the shopping bag, and an implementation of Paypal's
+        Smart Buttons to help with a secure checkout. As for some database implementations, we know that the "Contact
+        Us" section would be a great thing to implement within the webiste, especially when a customer wants to know
+        about their purchases' status.
+    </p>
+
+    <h2 id='overview'>What to Expect</h2>
+    <p>
+        Now, listed above were simply ideas we outlined based on our personal experiences with other clothing brands. We
+        know that we are missing things that we most likely won't notice until we actually begin implementing the
+        website. However, both Kauther and I are confident in our abilities and excited for the challenge we have ahead
+        us. In the next several blogs, I'll be writing about our journey towards getting the final product,
+        "ismahdesigns.com", complete.
+    </p>
+</article>
+<div class="loader-wrapper" id="loading">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+
+<script>
+    $(window).on('load', function () {
+        $('#loading').fadeOut();
+    });
+</script>
