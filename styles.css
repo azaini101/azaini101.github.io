@@ -20,10 +20,9 @@ h2 {
   font-size: 2.7em;
 }
 
-.gif {
-    position: relative;
+h4{
+  font-family: 'Roboto', sans-serif;
 }
-
 
 /* --NAVBAR STYLING-- */
  .navbar {
@@ -240,6 +239,18 @@ hr {
 .work-buttons button:hover{
   background-color: #697082;
   color: white;
+  transition-duration: .3s;
+  text-decoration: none;
+}
+
+.alphasort{
+  background-color: transparent;
+  border-color: white;
+  color: white;
+}
+
+.alphasort:hover{
+  font-weight: bold;
   transition-duration: .3s;
   text-decoration: none;
 }

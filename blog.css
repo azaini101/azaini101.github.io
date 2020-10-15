@@ -1,176 +1,77 @@
-body{
-    background-color: rgb(180,180,180);
-    padding: 0;
-    margin: 0;
+* {
+    box-sizing: border-box;
 }
 
-.bg-light{
-    background-color: #999;
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    font-size: 16px;
+    line-height: 1.75;
+    background-color: #42646E;
 }
 
-.bg-white{
-    background-color: white;
+.category {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: black;
 }
 
-.bg-green{
-    background-color: green;
-}
-
-.bg-red{
-    background-color: red;
-}
-
-.bg-blue{
-    background-color: cyan;
-}
-
-.bg-yellow{
-    background-color: yellow;
-}
-
-.bg-dark{
-    background-color: black;
-    color: white;
-}
-
-.text-red{
-    color: red;
-}
-
-.text-blue{
-    color: cyan;
-}
-
-.text-green{
-    color: green;
-}
-
-.outline{
-    outline-width: 2px;
-    outline-style: solid;
-    padding: 5px;
-}
-
-.img-fluid{
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.center{
+.article {
+    width: 100%;
+    /* default */
+    max-width: 640px;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    display: block;
+    padding: 60px 30px;
 }
 
-.border{
-    border-style: solid;
-    border-width: 5px;
-}
+.meta {}
 
-ul{
-    list-style-type: upper-roman;
-    padding: 10px;
-}
-
-ul li{
-    font-family: 'Tangerine', cursive;
-    font-size: 45px;
-    font-weight: bold;
-}
-
-#overview{
-    text-align: center;
-    padding-top: 1em;
-}
-
-hr{
-    border: 3px solid #999;
+.author {
+    display: inline-block;
+    background-color: black;
+    color: white;
     border-radius: 5px;
+    padding: 8px 20px;
+    margin-right: 15px;
 }
 
-.thumbnail{
-    float: left;
-    border: 1 px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 150px;
-    margin-right: 10px;
+.pub-date {
+    line-height: 1;
+    display: inline-block;
+    vertical-align: baseline;
 }
 
-#my-name{
-    text-shadow: 2px 2px #ffffff;
-    color: magenta;
-    font-size: x-large;
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+
 }
 
-.container{
-    width: 80%;
-    margin: auto;
+h1 {
+    font-size: 2.232em;
+    /* line-height: 3 * 1.75 em; */
+    line-height: 1;
 }
 
-#navbar{
+h2 {
+    font-size: 1.826em;
+    line-height: 1;
+}
+
+h3 {
+    font-size: 1.494em;
+    line-height: 1.2;
+}
+
+
+figure {
+    padding: 0;
+}
+
+img {
     display: block;
-    text-align: right;
-    position: fixed;
-    top: -1em;
-    width: 100%;
-}
-
-.nav-item{
-    all: unset;
-}
-
-a{
-    text-decoration: none;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-a:hover{
-    color:red;
-}
-
-h3{
-    font-family: 'Tangerine', cursive;
-    font-size: 45px;
-    font-weight: bold;
-}
-
-.title{
-    font-family: 'Tangerine', cursive;
-    font-size: 80px;
-    text-align: center;
-    padding-top: 1em;
-}
-
-.subtitle{
-    font-style: italic;
-    text-align: center;
-    display: block;
-    font-family: 'Caveat', cursive;
-    font-size: 26px;
-
-}
-
-p{
-    margin: 35px;
-    font-size: 20px;
-}
-
-h2{
-    margin: 35px;
-    font-family: 'Inconsolata', cursive;
-    font-size: 30px;
-}
-
-#myInput {
-    background-position: 10px 12px; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: 100%; /* Full-width */
-    font-size: 16px; /* Increase font-size */
-    padding: 12px 20px 12px 40px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
 }
